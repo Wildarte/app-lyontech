@@ -1,0 +1,58 @@
+
+:root{
+    --color-blue: #11A9F7;
+    --color-blue-2: #495FE3;
+    --color-purple: #A973F3;
+    --color-purple-2: #A635FF;
+    --color-dark-blue: #2C1D55;
+
+    --color-gray: #DCE5F6;
+    --color-white: #ffffff;
+    --color-black: #000000;
+}
+
+
+.header{
+    width: 100%;
+    padding: 20px 20px 100px;
+    background-color: var(--color-dark-blue);
+    background-image: url(../img/head.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+.logo_header{
+    width: 200px;
+}
+
+.side_menu{
+    background-image: linear-gradient(to bottom, var(--color-purple), var(--color-purple-2), var(--color-blue-2));
+    min-width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 0 60px 0 0;
+    overflow: hidden;
+    z-index: 100;
+}
+.top_sidebar{
+    background-image: linear-gradient(to bottom, var(--color-blue), var(--color-blue-2));
+    display: flex;
+    align-items: center;
+}
+.content_top_sidebar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+.user_side{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 2px solid var(--color-dark-blue);
+    background-attachment: var(--color-white);
+}

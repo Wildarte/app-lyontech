@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Lyon Tech</title>
+</head>
+<body>
+    
+    <header class="header">
+        <img class="logo_header" src="assets/img/logo.png" alt="">
+    </header>
+
+    <div class="body_content">
+        <div class="side_menu">
+
+            <div class="top_sidebar">
+
+                <div class="content_top_sidebar">
+                    <img class="user_side" src="assets/img/user.png" alt="">
+
+                    <div class="info_top_sidebar">
+                        <p><strong>Rodrigo Soares</strong></p>
+                        <p>Operacional</p>
+                    </div>
+
+                    <div class="btn_menu">
+                        <i class="bi bi-list"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="content_inner">
+
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        const header = document.querySelector('.header');
+        let h_head = header.getBoundingClientRect();
+        const top_sidebar = document.querySelector('.top_sidebar');
+
+        top_sidebar.style.height = (h_head.height-60)+"px";
+
+    </script>
+</body>
+</html>

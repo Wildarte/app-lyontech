@@ -54,3 +54,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+//======================== contratos ===============================================
+const btn_contratos = document.getElementById('btn_contratos');
+const table_contratos = document.getElementById('table_contratos');
+
+btn_contratos.addEventListener('click', () => {
+
+    if(table_contratos.classList.contains('d-table')){
+        table_contratos.classList.remove('d-table')
+    }else{
+        table_contratos.classList.add('d-table')
+    }
+
+});
+//======================== contratos ===============================================

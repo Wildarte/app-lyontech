@@ -47,8 +47,14 @@ body{
 .f-30{
     flex-basis: 30%;
 }
+.f-25{
+    flex-basis: 25%;
+}
 .f-70{
     flex-basis: 70%;
+}
+.f-75{
+    flex-basis: 75%;
 }
 .justify-end{
     justify-content: flex-end;
@@ -56,6 +62,12 @@ body{
 img{
     max-width: 100%;
 }
+.p-10{
+    padding: 10px;
+}
+/* ===================== general ======================== */
+
+
 .side_menu{
     background-image: linear-gradient(to bottom, var(--color-purple), var(--color-purple-2), var(--color-blue-2));
     height: 100vh;
@@ -433,4 +445,112 @@ img{
 }
 .card_dash:last-child::after{
     display: none;
+}
+
+
+.form_filter input, .form_filter select{
+    border: 1px solid var(--color-blue-3);
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.2em;
+    width: 100%;
+    background-color: var(--color-white);
+}
+.form_filter label{
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--color-blue-2);
+}
+.col_form_filter{
+    padding: 10px;
+}
+.bottom_form_filter{
+    justify-content: flex-end;
+    padding: 10px;
+}
+.btn_form_filter{
+    background-image: linear-gradient(to right, var(--color-blue), var(--color-blue-2));
+    padding: 8px 30px;
+    color: var(--color-white);
+    font-size: 1.2em;
+    border-radius: 30px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+}
+.btn_contrato{
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, var(--color-blue-3), var(--color-blue-2));
+    color: var(--color-light);
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.btn_contrato img{
+    margin-right: 10px;
+}
+.btn_contratos img{
+    width: 40px;
+    margin: auto;
+    cursor: pointer;
+}
+.table_default{
+    width: 100%;
+    border-collapse: collapse;
+}
+.over_table{
+    display: none;
+}
+.d-table{
+    display: flex;
+    flex-wrap: wrap;
+}
+.table_default thead{
+    position: relative;
+    padding: 10px;
+}
+.table_default thead tr th{
+    padding: 10px 2px;
+    color: var(--color-blue-2);
+}
+.table_default thead::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(to right, var(--color-blue-2), var(--color-blue-3));
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.table_default tbody tr td{
+    padding: 5px;
+    text-align: center;
+}
+.table_default tbody tr:nth-child(odd){
+    background-color: var(--color-gray);
+}
+.btn_control_registro_table{
+    background-color: var(--color-blue-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+.btn_control_registro_table img{
+    width: 90%;
+}
+.td_control{
+    justify-content: space-around;
 }

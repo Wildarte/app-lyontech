@@ -28,6 +28,24 @@ body{
     display: flex;
     justify-content: flex-end;
 }
+.color-blue-2{
+    color: var(--color-blue-2);
+}
+.text-center{
+    text-align: center;
+}
+.align-items-center{
+    align-items: center;
+}
+.p-5{
+    padding: 5px;
+}
+.w-100{
+    width: 100%;
+}
+.w-33{
+    width: 33%;
+}
 .logo_header{
     width: 200px;
 }
@@ -64,6 +82,53 @@ img{
 }
 .p-10{
     padding: 10px;
+}
+.m-10-0{
+    margin: 10px 0;
+}
+.p-20-10{
+    padding: 20px 10px;
+}
+.btn-default {
+    width: auto;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, var(--color-blue-3), var(--color-blue-2));
+    color: var(--color-light);
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.btn-secondary {
+    color: var(--color-light);
+    background-image: linear-gradient(to right, var(--color-blue), var(--color-blue-3));
+    padding: 10px 20px;
+    border-radius: 30px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+.btn-secondary img{
+    margin-right: 10px!important;
+    width: 32px!important;
+}
+.btn-default img{
+    margin-right: 10px;
+}
+.m-auto{
+    margin: auto;
+}
+.justify-space-between{
+    justify-content: space-between;
 }
 /* ===================== general ======================== */
 
@@ -552,5 +617,117 @@ img{
     width: 90%;
 }
 .td_control{
-    justify-content: space-around;
+    justify-content: center;
+}
+.td_control button{
+    margin: 0 4px;
+}
+.btn_send{
+    margin: auto;
+    padding: 8px 20px;
+    border-radius: 40px;
+    border: none;
+    color: var(--color-white);
+    background-image: linear-gradient(to right, var(--color-blue-3), var(--color-blue));
+    font-size: 1.2em;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.btn_send img{
+    width: 32px;
+    margin-right: 10px;
+}
+
+.modal{
+    background-color: var(--color-white);
+    margin-top: -80px;
+    transition: all .3s;
+}
+.open_modal{
+    margin-top: 0!important;
+}
+.over_modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(10,10,10, .6);
+    transition: all .23s;
+}
+.open_over_modal{
+    display: flex;
+}
+
+.over_table_simple{
+    max-height: 400px;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+.over_table_simple::-webkit-scrollbar{
+    width: 12px;
+    background-color: transparent;
+}
+.over_table_simple::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(to bottom, var(--color-purple), var(--color-purple-2));
+    border-radius: 10px;
+}
+.over_table_simple table thead{
+    position: sticky;
+    top: 0;
+    background-color: #F1F5FB
+}
+
+.field_form_deg{
+    margin: 5px;
+    border: 1px solid var(--color-purple-2);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.head_simple_2{
+    padding: 20px 10px;
+    background-image: linear-gradient(to bottom, var(--color-blue-2), var(--color-purple-2));
+    color: var(--color-light);
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.content_field_form_deg{
+    padding: 10px;
+}
+.content_field_form_deg input{
+    border: 1px solid var(--color-blue-3);
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.2em;
+    width: 100%;
+    background-color: var(--color-white);
+}
+.table_simula .head_simple_2{
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.table_num{
+    display: flex;
+    flex-wrap: wrap;
+    border: 6px solid var(--color-purple-2);
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.single_num{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+.single_num:hover{
+    background-color: var(--color-dark-blue-2);
+    color: var(--color-white);
 }

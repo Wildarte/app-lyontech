@@ -166,7 +166,7 @@
                 <div class="content_frame d-flex">
                     
                     <div class="f-25 p-10">
-                        <button class="btn_contrato"><img src="assets/img/add-icon.png" alt=""> Adicionar Contratos</button>
+                        <button class="btn_contrato" id="add_modal"><img src="assets/img/add-icon.png" alt=""> Adicionar Contratos</button>
                         <button class="btn_contrato"><img src="assets/img/download-icon.png" alt=""> Exportar Contratos</button>
                     </div>
 
@@ -232,7 +232,7 @@
                 </div>
 
                 <div class="content_frame">
-                    <div class="row_gray btn_contratos d-flex" id="btn_contratos">
+                    <div class="row_gray btn_contratos d-flex" id="btn_table">
                         <img src="assets/img/polygon.png" alt="">
                     </div>
 
@@ -352,6 +352,111 @@
             </div>
 
         </div>
+    </div>
+
+    <div class="over_modal">
+
+        <div class="modal frame">
+
+            <div class="head_frame_simple">
+                <h2>Criação de Contrato</h2>
+            </div>
+    
+            <div class="content_frame">
+                <form action="" method="post" class="form_filter d-flex">
+                    <div class="f-50 p-10">
+                        <label for="">Grupo</label>
+                        <select name="" id="">
+                            <option value="value1">Grupo 1</option>
+                            <option value="value2">Grupo 2</option>
+                            <option value="value3">Grupo 3</option>
+                            <option value="value4">Grupo 4</option>
+                            <option value="value5">Grupo 5</option>
+                        </select>
+                    </div>
+                    <div class="f-50 p-10">
+                        <label for="">Cota</label>
+                        <select name="" id="">
+                            <option value="value1">Cota 1</option>
+                            <option value="value2">Cota 2</option>
+                            <option value="value3">Cota 3</option>
+                            <option value="value4">Cota 4</option>
+                            <option value="value5">Cota 5</option>
+                        </select>
+                    </div>
+                    <div class="f-50 p-10">
+                        <label for="">Consultor</label>
+                        <select name="" id="">
+                            <option value="value1">Consultor 1</option>
+                            <option value="value2">Consultor 2</option>
+                            <option value="value3">Consultor 3</option>
+                            <option value="value4">Consultor 4</option>
+                            <option value="value5">Consultor 5</option>
+                        </select>
+                    </div>
+                    <div class="f-50 p-10">
+                        <label for="">Valor cota</label>
+                        <select name="" id="">
+                            <option value="value1">Valor cota 1</option>
+                            <option value="value2">Valor cota 2</option>
+                            <option value="value3">Valor cota 3</option>
+                            <option value="value4">Valor cota 4</option>
+                            <option value="value5">Valor cota 5</option>
+                        </select>
+                    </div>
+                    <div class="f-50 p-10">
+                        <label for="">Data de fechamento</label>
+                        <input type="date" name="" id="">
+                    </div>
+                    <div class="f-50 p-10">
+                        <label for="">Tipo de Consórcio</label>
+                        <select name="" id="">
+                            <option value="value1">Tipo de Consórcio 1</option>
+                            <option value="value2">Tipo de Consórcio 2</option>
+                            <option value="value3">Tipo de Consórcio 3</option>
+                            <option value="value4">Tipo de Consórcio 4</option>
+                            <option value="value5">Tipo de Consórcio 5</option>
+                        </select>
+                    </div>
+                    <div class="f-50 p-10">
+                        <label for="">Cliente</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="f-50 p-10">
+                        <label for="">Contrato</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="f-50 p-10">
+                        <label for="">Qtde Parcela Comissão</label>
+                        <input type="number" name="" id="">
+                    </div>
+                    <div class="f-50 p-10">
+                        <label for="">Taxa de Comissão % - Vendedor</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="f-50 p-10">
+                        <label for="">Supervisor</label>
+                        <select name="" id="">
+                            <option value="value1">Supervisor 1</option>
+                            <option value="value2">Supervisor 2</option>
+                            <option value="value3">Supervisor 3</option>
+                            <option value="value4">Supervisor 4</option>
+                            <option value="value5">Supervisor 5</option>
+                        </select>
+                    </div>
+                    <div class="f-50 p-10">
+                        <label for="">Taxa de Comissão % - Supervisor</label>
+                        <input type="text" name="" id="">
+                    </div>
+        
+                    <div class="d-flex w-100 p-10">
+                        <button class="btn_send"><img src="assets/img/icon-flag.png" alt=""> Salvar</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+
     </div>
 
     <script src="assets/js/script.js"></script>

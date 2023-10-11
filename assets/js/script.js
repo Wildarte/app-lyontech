@@ -56,16 +56,67 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 //======================== contratos ===============================================
-const btn_contratos = document.getElementById('btn_contratos');
+const btn_table = document.getElementById('btn_table');
 const table_contratos = document.getElementById('table_contratos');
 
-btn_contratos.addEventListener('click', () => {
+if(btn_table){
+    btn_table.addEventListener('click', () => {
 
-    if(table_contratos.classList.contains('d-table')){
-        table_contratos.classList.remove('d-table')
-    }else{
-        table_contratos.classList.add('d-table')
-    }
+        if(table_contratos.classList.contains('d-table')){
+            table_contratos.classList.remove('d-table')
+        }else{
+            table_contratos.classList.add('d-table')
+        }
+    
+    });
+}
 
-});
+const add_modal = document.getElementById('add_modal');
+const over_modal = document.querySelector('.over_modal');
+const modal = document.querySelector('.modal');
+
+if(add_modal){
+
+    add_modal.addEventListener('click', () => {
+
+        if(over_modal.classList.contains('open_over_modal')){
+            over_modal.classList.remove('open_over_modal');
+            modal.classList.remove('open_modal');
+
+        }else{
+            over_modal.classList.add('open_over_modal');
+            setTimeout(function(){
+                modal.classList.add('open_modal');
+            },10)
+        }
+    
+    });
+
+    document.addEventListener('keydown', (e) => {
+        let kd = e.key;
+
+        if(kd == "Escape"){
+            modal.classList.remove('open_modal');
+            setTimeout(function(){
+                over_modal.classList.remove('open_over_modal');    
+            }, 100)
+        }
+    })
+    
+
+}
+if(over_modal){
+    over_modal.addEventListener('click', (e) => {
+
+        if(e.target.classList.contains('open_over_modal')){
+            
+            modal.classList.remove('open_modal');
+            setTimeout(function(){
+                over_modal.classList.remove('open_over_modal');    
+            }, 100)
+        }
+
+    });
+}
+
 //======================== contratos ===============================================

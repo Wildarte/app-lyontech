@@ -120,3 +120,6 @@ if(over_modal){
 }
 
 //======================== contratos ===============================================
+
+const sidebar_body = document.querySelector('.sidebar_body');
+sidebar_body.style.height = "calc(100% - "+height_header+"px)"

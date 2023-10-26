@@ -34,6 +34,9 @@ body{
 .text-center{
     text-align: center;
 }
+.text-right{
+    text-align: right;
+}
 .align-items-center{
     align-items: center;
 }
@@ -885,3 +888,69 @@ img{
 @media(max-width: 500px){
     
 }
+
+.over_login{
+    width: 1300px;
+    height: calc(100% - 100px);
+    margin: 50px;
+    border-radius: 0;
+    background-color: rgba(1,1,1,.5);
+    box-shadow: none;
+}
+.over_login_right{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.over_form{
+    justify-content: center;
+    align-content: center;
+    background-image: linear-gradient(to right bottom, rgba(190,190,190, .4), rgba(100,100,100, .1));
+    padding: 80px 40px;
+    border-radius: 20px;
+    width: 70%;
+    margin: auto;
+}
+.form_col_login{
+    padding: 10px 0;
+}
+.form_col_login input{
+    border-radius: 0;
+    font-size: 1.2em;
+}
+.form_login button[type=submit]{
+    border-radius: 0;
+}
+.form_login{
+    border-radius: 0;
+    width: 100%;
+}
+.form_col_login label{
+    padding: 5px 0;
+}
+.over_login_left{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.over_img_logo video{
+    width: 100%;
+}
+
+@media(max-width: 768px){
+    .over_login_left, .over_login_right{
+        flex-basis: 100%;
+    }
+    .over_img_logo video, .over_login_left{
+        display: none;
+    }
+    .over_login{
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        flex-direction: column-reverse;
+    }
+}
+
